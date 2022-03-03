@@ -1,0 +1,387 @@
+{% load i18n static %}
+<header class="main-header header-style-one">
+        <!-- Header Top -->
+        <div class="header__up_new">
+          <div class="header-top header-top-one">
+            <div class="container">
+              <div class="inner clearfix">
+                <div class="top-left clearfix">
+                  <div class="top-text">Innovative Solutions From Solar Energy
+                    ...</div>
+                </div>
+
+                <div class="top-right clearfix">
+                  <div class="email">
+                    <a href="mailto:support@domain.com">Email:
+                      support@domain.com</a>
+                  </div>
+                  <ul class="social-links clearfix">
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Upper -->
+        <div class="burger-content">
+          <div class="burger-menu">
+            <div class="burger-menu_up d-flex">
+              <p class="burger-mune_text">Корзинка</p>
+              <div class="burger-menu_rem"></div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <!-- ПРошлое Место навигации -->
+
+        <div class="header-main-box">
+          <div class="header-for_bg">
+            <div class="auto-container">
+              <div class="inner-container">
+                <div class="upper-row clearfix">
+                  <!--Logo-->
+                  <div class="logo-box">
+                    <div class="logo d-flex">
+                      <img width="75" height="75"
+                        src="https://i0.wp.com/energopribor.uz/wp-content/uploads/2021/11/energopribor_logo.png?fit=75%2C75&amp;ssl=1"
+                        class="custom-logo" alt="Energopribor_log">
+                      <a href="../../" id="#logo" class="header__logo">Energopribor</a>
+                      <!-- <a href="index.html" title="Strnix - Green Energy HTML Template"><img
+                src="images/logo.png" alt="Strnix - Green Energy HTML Template"
+                title="Strnix - Green Energy HTML Template"></a> -->
+                    </div>
+
+                  </div>
+                  <div class="right-info clearfix">
+                    <!--Info-->
+                    <div class="info clearfix">
+                      <!--Info Block-->
+                      <div class="info-block">
+                        <div class="icon-box">
+                          <span class="icon">
+                            <!-- <img src="images/icons/icon-call-1.png" alt=""> -->
+                            <i class="fas fa-phone-alt for__icon_info"></i>
+                          </span>
+                        </div>
+                        <strong class="info-block__text">Позвонить нам</strong>
+                        <div class="info-text">
+                          <a href="tel:(222)-303-4500">(97) 777 77 77</a>
+                        </div>
+                      </div>
+                      <!--Info Block-->
+                      <div class="info-block">
+                        <div class="icon-box">
+                          <span class="icon">
+                            <!-- <img src="images/icons/icon-message-1.png" alt=""> -->
+                            <i class="fas fa-map-marker-alt for__icon_info"></i>
+                          </span>
+                        </div>
+                        <strong class="info-block__text">Наш адрес</strong>
+                        <div class="info-text">
+                          <p>ул Шимолий Олмазор, дом-4 кв-1.</p></div>
+                      </div>
+                      <!--Info Block-->
+                      <div class="info-block">
+                        <div class="icon-box">
+                          <span class="icon">
+                            <!-- <img src="images/icons/icon-call-1.png" alt=""> -->
+                            <i class="fas fa-envelope for__icon_info"></i>
+                          </span>
+                        </div>
+                        <strong class="info-block__text">Почтовый адрес</strong>
+                        <div class="info-text">
+                          <a href="tel:(222)-303-4500">info@mail.com</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Link Box-->
+                    <div class="nav-outer clearfix">
+                      <!--Mobile Navigation Toggler-->
+                      <div class="mobile-nav-toggler"><span class="icon
+                          flaticon-menu-1"></span></div>
+
+                      <!-- Main Menu -->
+                      <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse show clearfix"
+                          id="navbarSupportedContent">
+
+                          <ul class="navigation clearfix d-none-f d-block-f">
+                            <li class="current">
+                              <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                              <a href="{% url 'about' %}">О компании</a>
+                            </li>
+                            <li class="dropdown"><a href="{% url 'store' %}">Продукты</a>
+                              <ul>
+                                <li class="dropdown"><a href="services.html">Продуктs</a>
+                                  <ul>
+                                    <li><a href="services.html">Продукт</a>
+                                    </li>
+                                    <li><a href="installation-service.html">Продукт</a></li>
+                                    <li><a href="maintenance-service.html">Продукт</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="installation-service.html">Продукт</a></li>
+                                <li><a href="maintenance-service.html">Продукт</a></li>
+                                <li><a href="replacement-service.html">Продукт</a></li>
+                                <li><a href="commercial-service.html">Продукт</a></li>
+                                <li><a href="residential-service.html">Продукт</a></li>
+                                <li><a href="thermal-service.html">Продукт</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="{% url 'partners' %}">Партнер</a>
+                            </li>
+                            <li>
+                              <a href="blog.html">Наша команда</a>
+                            </li>
+                            <li><a href="contact.html">Контакты</a></li>
+                          </ul>
+
+
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="search__card_second d-none-f"><i class="fas fa-shopping-cart">
+                      <div class="search__second_desc"><p data-attr="0"></p></div>
+                    </i></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-row header__nav_bottom">
+          <div class="container">
+            <!--Nav Box-->
+            <div class="nav-box clearfix">
+              <div class="nav-outer clearfix d-none-f block-for-h">
+                <!--Mobile Navigation Toggler-->
+
+                <div class="mobile-nav-toggler"><span class="icon
+                    flaticon-menu-1"></span></div>
+
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-md navbar-light">
+                  <div class="collapse navbar-collapse show clearfix"
+                    id="navbarSupportedContent">
+                    <ul class="navigation clearfix">
+                      <li class="current dropdown"><a href="index.html">Главная</a>
+                        <!-- <ul>
+                    <li><a href="index.html">Home Solar Energy</a></li>
+                    <li><a href="index-2.html">Home Wind Power</a></li>
+                    <li><a href="index-3.html">Home Bio Energy</a></li>
+                    <li><a href="index-4.html">Home Fuel Energy</a></li>
+                    <li><a href="index-5.html">Home Hydro Power</a></li>
+                    <li class="dropdown"><a href="index.html">Header Styles</a>
+                      <ul>
+                        <li><a href="index.html">Header Style One</a></li>
+                        <li><a href="index-2.html">Header Style Two</a></li>
+                        <li><a href="index-3.html">Header Style Three</a></li>
+                        <li><a href="index-4.html">Header Style Four</a></li>
+                        <li><a href="index-5.html">Header Style Five</a></li>
+                      </ul>
+                      <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>
+                    </li>
+                  </ul> -->
+                        <div class="dropdown-btn"><span class="fa
+                            fa-angle-right"></span></div>
+                      </li>
+                      <li class="dropdown"><a href="{% url 'about' %}">О компании</a>
+                        <!-- <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                    <li><a href="projects.html">Dedicated Projects</a></li>
+                  </ul> -->
+                        <div class="dropdown-btn"><span class="fa
+                            fa-angle-right"></span></div>
+                      </li>
+                      <li class="dropdown"><a href="{% url 'store' %}">Продукты</a>
+                        <ul>
+                          <li><a href="services.html">Продукт</a>
+                            <ul>
+                              <li><a href="services.html">Продукт</a>
+                                <ul>
+                                  <li><a href="services.html">Продукт</a> </li>
+                                  <li><a href="installation-service.html">Продукт</a></li>
+                                  <li><a href="maintenance-service.html">Продукт</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="installation-service.html">Продукт</a></li>
+                              <li><a href="maintenance-service.html">Продукт</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="installation-service.html">Продукт</a></li>
+                          <li><a href="maintenance-service.html">Продукт</a></li>
+                          <li><a href="replacement-service.html">Продукт</a></li>
+                          <li><a href="commercial-service.html">Продукт</a></li>
+                          <li><a href="residential-service.html">Продукт</a></li>
+                          <li><a href="thermal-service.html">Продукт</a></li>
+                        </ul>
+                        <div class="dropdown-btn"><span class="fa
+                            fa-angle-right"></span></div>
+                      </li>
+                      <li><a href="{% url 'partners' %}">Партнер</a></li>
+                      <li class="dropdown"><a href="blog.html">Контакты</a>
+                        <!-- <ul>
+                    <li><a href="blog-grid.html">Blog Grid Style</a></li>
+                    <li><a href="blog.html">Blog with Sidebar</a></li>
+                    <li><a href="blog-single.html">Blog Post Details</a></li>
+                  </ul> -->
+                        <div class="dropdown-btn"><span class="fa
+                            fa-angle-right"></span></div>
+                      </li>
+                      <li><a href="contact.html">Наша команда</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+
+              <!--Search Btn-->
+              <div class="search-btn d-flex">
+                <input type="text" id="#navba_search" class="navba_search"
+                  placeholder="Поиск...">
+                <button type="button" class="theme-btn search-toggler"><span
+                    class="fa fa-search"></span></button>
+                    <div class="search__btn_card">
+
+                      <i class="fas fa-shopping-cart">
+                        <div class="search__btn_desc"><p data-attr="0"></p></div>
+                      </i></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!--End Header Upper-->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+              <div class="logo d-flex">
+                <img width="75" height="75"
+                  src="https://i0.wp.com/energopribor.uz/wp-content/uploads/2021/11/energopribor_logo.png?fit=75%2C75&amp;ssl=1"
+                  class="custom-logo" alt="Energopribor_log">
+                <a href="" id="#logo-sub" class="header__logo">Energopribor</a>
+              </div>
+            </div>
+
+            <!--Right Col-->
+            <div class="pull-right">
+
+              <!-- Main Menu -->
+              <nav class="main-menu for__nav_bar clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+
+                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+
+              <ul class="navigation clearfix">
+                <li class="current dropdown"><a href="index.html">Главная</a>
+
+                  <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>
+                </li>
+                <li class="dropdown"><a href="{% url 'about' %}">О компании</a>
+
+                  <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>
+                </li>
+                <li class="dropdown"><a href="{% url 'store' %}">Продукты</a>
+                  <ul>
+                    <li><a href="services.html">Продукт</a>
+                      <ul>
+                        <li><a href="services.html">Продукт</a>
+                          <ul>
+                            <li><a href="services.html">Продукт</a> </li>
+                            <li><a href="installation-service.html">Продукт</a></li>
+                            <li><a href="maintenance-service.html">Продукт</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="installation-service.html">Продукт</a></li>
+                        <li><a href="maintenance-service.html">Продукт</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="installation-service.html">Продукт</a></li>
+                    <li><a href="maintenance-service.html">Продукт</a></li>
+                    <li><a href="replacement-service.html">Продукт</a></li>
+                    <li><a href="commercial-service.html">Продукт</a></li>
+                    <li><a href="residential-service.html">Продукт</a></li>
+                    <li><a href="thermal-service.html">Продукт</a></li>
+                  </ul>
+                  <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>
+                </li>
+                <li><a href="{% url 'partners' %}">Партнер</a></li>
+                <li class="dropdown"><a href="blog.html">Наша команда</a>
+                  <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>
+                </li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </div>
+              </nav><!-- Main Menu End-->
+              <div class="search__btn_third"><i class="fas fa-shopping-cart">
+                <div class="search__second_desc"><p data-attr="0"></p></div>
+              </i></div>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Sticky Menu -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+          <nav class="menu-box mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+            <div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical
+              mCSB_inside" tabindex="0"
+              style="max-height: 638px;">
+              <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden
+                mCS_no_scrollbar_y"
+                style="position:relative; top:0; left:0;" dir="ltr">
+                <div class="nav-logo">
+                  <a href="index.html">
+                    <div class="logo d-flex">
+                      <img width="75" height="75"
+                        src="https://i0.wp.com/energopribor.uz/wp-content/uploads/2021/11/energopribor_logo.png?fit=75%2C75&amp;ssl=1"
+                        class="custom-logo" alt="Energopribor_log">
+                      <a href="" id="#logo" class="header__logo">Energopribor</a>
+                      <!-- <a href="index.html" title="Strnix - Green Energy HTML Template"><img
+                  src="images/logo.png" alt="Strnix - Green Energy HTML Template"
+                  title="Strnix - Green Energy HTML Template"></a> -->
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                  <div class="collapse navbar-collapse show clearfix"
+                    id="navbarSupportedContent">
+
+                    <div class="search-btn d-flex">
+                      <input type="text" id="#navba_search" class="navba_search"
+                        placeholder="Поиск...">
+                      <button type="button" class="theme-btn search-toggler"><span
+                          class="fa fa-search"></span></button>
+
+
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+                <!--Social Links-->
+
+              </div>
+            </nav>
+          </div><!-- End Mobile Menu -->
+        </header>

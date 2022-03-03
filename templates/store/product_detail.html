@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="blog-content">
+
+                        <div class="post-details">
+                            <div class="image-box">
+                                <figure class="image"><img src="{{ single_product.image.url }}" alt=""></figure>
+                                <div class="post-date">
+                                    <a href="{% url 'add_cart' single_product.id %}"><span class="day"><i class="fas fa-check"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="lower-box">
+                                <h2>Avoid Solar Panels Damage Your Top Roof</h2>
+                                <div class="meta-info">By <a href="#">Admin</a> &nbsp;|&nbsp; <a href="#">Solar
+                                    Energy</a>, <a href="#">Installation</a></div>
+
+                                <div class="text">
+                                    <p>Pellentesque porta arcu velit faucibs kodales dolor rhoncus sed. Curabitur
+                                        lacinia masysa vitaese Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                        non proident, sunt in culpa lorem ipsum dolor sit amet, con- sectetur
+                                        adipisicing elit, sed do eiusmod tempor.</p>
+                                    <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco labo ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat.</p>
+
+                                    <!-- <blockquote>
+                                        <div class="icon"><span class="flaticon-right-quote"></span></div>
+                                        <div class="text">Integer lobortis sem consequat consequat imperdiet. In nulla sed viverra ut lorem dapb consectetur bibendum imperdiets. Aliquam era volutpat dolore eu fugiat nulla pariatur excepteur sint occaecat.</div>
+                                        <div class="info">-- Shepa Thomas</div>
+                                    </blockquote>
+ -->
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!--Comments Area-->
+
+
+                        <!--Leave Comment Form-->
+
+
+                    </div>
+                </div>
+
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar blog-sidebar">
+                        <!--Sidebar Widget-->
+                        <!-- <div class="sidebar-widget search-box">
+                            <form method="post" action="blog.html">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search.." required="">
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="sidebar-widget archives">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h3>Categories</h3>
+                                    <div class="bottom-dots clearfix">
+                                        <span class="dot line-dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li><a href="#">Solar Maintenance</a></li>
+                                    <li class="active"><a href="#">Panels Installation</a></li>
+                                    <li><a href="#">Replacement Upgrade</a></li>
+                                    <li><a href="#">Commercial Services</a></li>
+                                    <li><a href="#">Thermal Systems</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget recent-posts">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h3>Recent Posts</h3>
+                                    <div class="bottom-dots clearfix">
+                                        <span class="dot line-dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+
+                                <div class="post">
+                                    <figure class="post-thumb"><img src="images/resource/post-thumb-1.jpg" alt=""></figure>
+                                    <h3 class="text"><a href="#">Home Solar Power, Reuse  By Maintainance</a></h3>
+                                    <div class="date">Posted: 23 Oct 2019</div>
+                                </div>
+
+                                <div class="post">
+                                    <figure class="post-thumb"><img src="images/resource/post-thumb-2.jpg" alt=""></figure>
+                                    <h3 class="text"><a href="#">Engineering According To Individual Needs</a></h3>
+                                    <div class="date">Posted: 23 Oct 2019</div>
+                                </div>
+
+                                <div class="post">
+                                    <figure class="post-thumb"><img src="images/resource/post-thumb-3.jpg" alt=""></figure>
+                                    <h3 class="text"><a href="#">Home Solar Power, Reuse  By Maintainance</a></h3>
+                                    <div class="date">Posted: 23 Oct 2019</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget popular-tags">
+                            <div class="widget-inner">
+                                <div class="sidebar-title">
+                                    <h3>Popular Tags</h3>
+                                    <div class="bottom-dots clearfix">
+                                        <span class="dot line-dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <ul class="tags-list clearfix">
+                                    <li><a href="#">Industry</a></li>
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Power &amp; Energy</a></li>
+                                    <li><a href="#">Manufacture</a></li>
+                                    <li><a href="#">Chemical</a></li>
+                                    <li><a href="#">Solar Plates</a></li>
+                                    <li><a href="#">Environment</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!--Sidebar Widget-->
+                        <div class="sidebar-widget info-widget">
+                            <div class="widget-inner">
+                                <div class="image"><a href="#"><img src="images/resource/featured-image-5.jpg"
+                                                                    alt=""></a></div>
+                                <div class="lower">
+                                    <div class="subtitle">Got any Questions? <br>Call us Today!</div>
+                                    <div class="icon-box"><span class="flaticon-telephone-1"></span></div>
+                                    <div class="phone"><a href="tel:1-222-303-4500">1-222-303-4500</a></div>
+                                    <div class="email"><a href="mailto:support@strnix.net">support@strnix.net</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

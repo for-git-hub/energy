@@ -1,0 +1,26 @@
+.row{
+    margin-top: 170px;
+}
+.sidebar-widget{
+    height: 450px;
+}
+.day i{
+    margin-top: 5px;
+    font-size: 25px;
+    color: #178dff;
+}
+.sidebar-page-container{
+    padding-bottom: 0px;
+}
+@media(max-width:991px){
+    .row{
+        margin-top: 0px;
+    }
+    .sidebar .info-widget{
+        display: none;
+    }
+    .post-details .image-box .post-date{
+        width: 52px;
+        height: 52px;
+    }
+}

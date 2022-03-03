@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <section class="news-section news-page">
+        <div class="auto-container">
+
+            <div class="row clearfix">
+                <!--News Block-->
+                {% for cart_item in cart_items %}
+                <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image">
+                                <a href="blog-single.html"><img src="{{ cart_item.product.image.url }}" alt=""></a>
+                            </figure>
+                            <div class="post-date d-flex">
+                                    <span class="add__in_cart">
+                                        <i class="fas fa-cart-plus cart-add"></i>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                            <h3><a href="blog-single.html">{{ cart_item.product.product_name }}</a></h3>
+                            <div class="meta-info"><p class="lower-box_price">Цена: {{ cart_item.product.price }} сум</p></div>
+                            <div class="link-box">
+                                <a href="blog-single.html"><span class="txt">Подробнее...</span> <span
+                                        class="icon flaticon-arrows-11"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

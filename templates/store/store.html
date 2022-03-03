@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+ <div class="page-wrapper">
+
+
+
+        <!--News Section-->
+        <section class="news-section news-page">
+            <div class="auto-container">
+
+                <div class="row clearfix">
+                    <!--News Block-->
+                    {% for products in products %}
+                    <div class="news-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image">
+                                    <a href="{{ products.get_url }}"><img src="{{ products.image.url }}" alt=""></a></figure>
+                                <div class="post-date d-flex">
+                                    <span class="add__in_cart">
+                                        <i class="fas fa-cart-plus cart-add"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="lower-box">
+                                <h3><a href="{{ products.get_url }}">{{ products.product_name }}</a></h3>
+                                <div class="meta-info"><p class="lower-box_price">Цена: {{ products.price }} сум</p></div>
+                                <div class="link-box">
+                                    <a href="{{ products.get_url }}"><span class="txt">Подробнее...</span> <span class="icon flaticon-arrows-11"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="pagination-box centered">
+                    <ul class="styled-pagination">
+                        <li><a href="#" class="prev">Prev</a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#" class="next">Next</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+ </div>
+{% endblock %}
